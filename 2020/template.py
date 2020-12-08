@@ -15,13 +15,13 @@ settings = {
 
 def parse_input(inp_content):
     inp_content = inp_content.strip()
-
+    # add further input processing here..
     yield None
 
     
 @aoc_comm(settings, level = 1)
-def solve_l1(page):
-    inp = parse_input(page)
+def solve_l1(input_str): # input data will be passed to this as string 
+    inp = parse_input(input_str)
 
     ans = None
     for ee in inp:
@@ -33,8 +33,8 @@ def solve_l1(page):
 
 
 @aoc_comm(settings, level = 2)
-def solve_l2(page):
-    inp = parse_input(page)
+def solve_l2(input_str):
+    inp = parse_input(input_str)
 
     ans = None
     for ee in inp:
